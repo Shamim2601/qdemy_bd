@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Katakuti Game</title>
+        <title>Word Making Game</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"-->
         <style>
             p{
                 color: purple;
             }
             .field{
-                width: 200px;
-                padding-left: 30%;
-                padding-top: 100px;
+                width: 400px;
+                padding-left: 33%;
+                padding-top: 30px;
             }
             .cell{
                 height: 60px;
@@ -24,49 +25,60 @@
         </style>
     </head>
     <body>
-        <h3>Refresh to play again</h3>
+        <h3 style="text-align: center;"><u>Refresh to play again</u><br>Play Word-Making Game with Friends<br>Enter a letter in the input box and click on any cell</h3><br>
+        
+        <input id="test" type="text" style="margin-right: 40px; margin-left: 400px;"> <level>Number of try: </level><level id="num"></level>
+
         <div class="field">
-            <div class="cell">
-
-            </div>
-            <div class="cell">
-                
-            </div>
-            <div class="cell">
-                
-            </div>
-            <div class="cell">
-
-            </div>
-            <div class="cell">
-                
-            </div>
-            <div class="cell">
-                
-            </div>
-            <div class="cell">
-
-            </div>
-            <div class="cell">
-                
-            </div>
-            <div class="cell">
-                
-            </div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
         </div>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script>
             count = 0;
+            $("#num").text(count);
             $(".cell").click(function(){
-                if(count%2==0){
-                    $(this).text("O");
-                }
-                else{
-                    $(this).text("X");
-                }
-                count+=1;
-            })
+                string = (String) ($("#test").val());
+                char = string.charAt(count);
+                $(this).text(char);
+                count++;
+                $("#num").text(count);
+            });
         </script>
     </body>
 </html>
