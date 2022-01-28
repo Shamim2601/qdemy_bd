@@ -11,7 +11,7 @@
             }
             .field{
                 width: 400px;
-                padding-top: 30px;
+                padding-top: 15px;
             }
             .cell{
                 height: 60px;
@@ -24,7 +24,16 @@
         </style>
     </head>
     <body>
-        <h3 style="text-align: center;"><u>Refresh to play again</u><br>Play Word-Making Game with Friends<br>Enter a letter in the input box and click on any cell</h3><br>
+        <h3 style="text-align: center;"><u>Refresh to play again</u></h3><br>
+        <level>Play Word-Making Game with Friends<br>Enter a letter in the input box and click on any cell</level>
+        <button id="sbtn" onclick='$("#rules").css("display","block")'>Rules</button><br>
+        <div style="display: none;" id="rules">
+            <p>Try to make word of length at least 3. Who makes a meaningful word first, wins. 
+                Try shows the number of letter already tried. After making a word, click "New word" to try next word. 
+                Refresh the window to play again.
+                Good Luck! <button id="hbtn" onclick='$("#rules").css("display","none")'>Hide</button>
+            </p>
+        </div>
         
         <input id="test" type="text" style="margin-right: 20px; width: 100px;"> 
         <level >Try: </level><level id="num"></level>
