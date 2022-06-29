@@ -1,7 +1,5 @@
-- 👋 Hi, I’m @Shamim2601
-- 👀 I’m interested in ...Web dev
-- 🌱 I’m currently learning ... Web dev
-- 💞️ I’m looking to collaborate on ... Web dev
+- 👋 Hi, I’m Shamim Al Mamun from BUET CSE-18
+- 👀 I’m interested in ...Web development
 - 📫 How to reach me ... email
 
 <!---
