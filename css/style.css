@@ -1,5 +1,5 @@
 body{
-  font: 15px/1.5 Arial, Helvetica,sans-serif;
+  font: 18px/1.5 Arial, Helvetica,sans-serif;
   padding:0;
   margin:0;
   background-color:#f4f4f4;
@@ -39,7 +39,7 @@ header{
   background:#35424a;
   color:#ffffff;
   padding-top:30px;
-  min-height:70px;
+  min-height:90px;
   border-bottom:#e8491d 3px solid;
 }
 
@@ -47,13 +47,14 @@ header a{
   color:#ffffff;
   text-decoration:none;
   text-transform: uppercase;
-  font-size:16px;
+  font-size:18px;
 }
 
 header li{
   float:left;
   display:inline;
   padding: 0 20px 0 20px;
+  text-align: center;
 }
 
 header #branding{
@@ -63,12 +64,14 @@ header #branding{
 
 header #branding h1{
   margin:0;
+  font-size: 42px;
 }
 
 header nav{
   /* float:right; */
   margin-top:10px;
-  justify-content: center;
+  margin-left: 35%;
+  display: inline-block;
 }
 
 header .highlight, header .current a{
@@ -83,22 +86,24 @@ header a:hover{
 
 /* Showcase */
 #showcase{
-  min-height:400px;
+  min-height:500px;
   background:url('../img/showcase.jpg') no-repeat;
   background-position: center;
   background-size: cover;
   text-align:center;
+  padding-left: 30%;
+  padding-right: 30%;
   color:#ffffff;
 }
 
 #showcase h1{
-  margin-top:100px;
+  margin-top:20px;
   font-size:55px;
   margin-bottom:10px;
 }
 
-#showcase p{
-  font-size:20px;
+#showcase h3{
+  font-size:30px;
 }
 
 /* Newsletter */
@@ -131,13 +136,15 @@ header a:hover{
 #boxes .box{
   float:left;
   text-align: center;
-  width:30%;
-  padding:10px;
+  width:60%;
+  min-height: 150px;
+  margin-left:16%; 
+  padding: 20px;
 }
 
 #boxes .box img{
-  width:90px;
-  height: 100px;
+  width: 300px;
+  height: 360px;
 }
 
 /* Sidebar */
