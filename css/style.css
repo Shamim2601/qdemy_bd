@@ -17,30 +17,6 @@ ul{
   padding:0;
 }
 
-.button-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.button {
-  padding: 10px 20px;
-  background-color: #007bff; /* Change this to your preferred button color */
-  color: white;
-  text-decoration: none;
-  border: none;
-  border-radius: 5px;
-}
-
-.button:hover {
-  background-color: #0056b3; /* Change this to your preferred button color on hover */
-  cursor: pointer;
-  text-decoration: none;
-  color: white;
-  transition: background-color 0.3s ease;
-}
-
-
 .button_1{
   height:38px;
   background:#e8491d;
@@ -81,7 +57,8 @@ header li{
 }
 
 header #branding{
-  float:left;
+  /* float:left; */
+  text-align: center;
 }
 
 header #branding h1{
@@ -89,8 +66,9 @@ header #branding h1{
 }
 
 header nav{
-  float:right;
+  /* float:right; */
   margin-top:10px;
+  justify-content: center;
 }
 
 header .highlight, header .current a{
