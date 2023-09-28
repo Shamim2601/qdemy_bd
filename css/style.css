@@ -23,6 +23,11 @@ header img {
   display: block;
 }
 
+header h1{
+  text-align: center;
+  color: #0000ff;
+}
+
 #main_menu {
   margin-top: 20px;
   list-style: none;
@@ -45,14 +50,14 @@ section {
 }
 div {
   padding: 20px;
-  width: 60%;
+  width: 70%;
 }
 div h1 {
   margin-bottom: 20px;
 }
 aside {
   padding: 20px;
-  width: 40%;
+  width: 30%;
 }
 aside ul {
   margin-left: 20px;
